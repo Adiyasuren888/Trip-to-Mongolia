@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Mongolia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-image: url('https://source.unsplash.com/1600x600/?mongolia');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    nav {
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea, select, button {
+      padding: 10px;
+      font-size: 1em;
+    }
+    .language-switcher {
+      text-align: right;
+      padding: 10px 20px;
+      background: #eee;
+    }
+  </style>
+  <script>
+    function switchLanguage(lang) {
+      alert("Language switching to: " + lang + " (demo only)");
+    }
+  </script>
+</head>
+<body>
+  <div class="language-switcher">
+    <label for="lang">Language: </label>
+    <select id="lang" onchange="switchLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="mn">Mongolian</option>
+    </select>
+  </div>
+
+  <header>
+    <h1>Discover Mongolia</h1>
+    <p>Adventure Awaits in the Heart of Asia</p>
+  </header>
+
+  <nav>
+    <a href="#tours">Tours</a>
+    <a href="#about">About Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="tours">
+    <h2>Our Tours</h2>
+    <p>Explore our most popular Mongolian adventures:</p>
+    <ul>
+      <li>🏜️ Gobi Desert Safari - 7 Days</li>
+      <li>🏕️ Nomadic Culture Experience - 10 Days</li>
+      <li>🏞️ Horse Trekking in the Altai - 5 Days</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a local travel agency dedicated to sharing the beauty, culture, and adventure of Mongolia with the world. Join us for an unforgettable journey.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <img src="https://source.unsplash.com/400x300/?mongolia,landscape" alt="Mongolia 1" />
+    <img src="https://source.unsplash.com/400x300/?mongolia,horse" alt="Mongolia 2" />
+    <img src="https://source.unsplash.com/400x300/?mongolia,culture" alt="Mongolia 3" />
+  </section>
+
+  <section id="booking">
+    <h2>Book Your Tour</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <select name="tour">
+        <option value="gobi">Gobi Desert Safari</option>
+        <option value="nomadic">Nomadic Culture Experience</option>
+        <option value="altai">Horse Trekking in the Altai</option>
+      </select>
+      <textarea name="message" placeholder="Any special requests?"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@discovermongolia.com</p>
+    <p>Phone: +976 1234-5678</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Discover Mongolia. All rights reserved.</p>
+  </footer>
+</body>
+</html>
